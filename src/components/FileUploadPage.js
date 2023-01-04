@@ -44,15 +44,15 @@ class FileUploadPage extends Component{
 
             return (
                 <div>
-                    <h2>File Details:</h2>
+                    <h4>File Details:</h4>
                     <p>File Name: {this.state.selectedFile.name}</p>
 
-                    <p>File Type: {this.state.selectedFile.type}</p>
+                    {/*<p>File Type: {this.state.selectedFile.type}</p>*/}
 
-                    <p>
-                        Last Modified:{" "}
-                        {this.state.selectedFile.lastModifiedDate.toDateString()}
-                    </p>
+                    {/*<p>*/}
+                    {/*    Last Modified:{" "}*/}
+                    {/*    {this.state.selectedFile.lastModifiedDate.toDateString()}*/}
+                    {/*</p>*/}
 
                 </div>
             );
@@ -60,7 +60,7 @@ class FileUploadPage extends Component{
             return (
                 <div>
                     <br />
-                    <h4>Choose before Pressing the Upload button</h4>
+                    <h5>Choose before Pressing the Upload button</h5>
                 </div>
             );
         }
@@ -77,7 +77,7 @@ class FileUploadPage extends Component{
                     <input type="file" onChange={this.onFileChange} />
                 </div>
                 <div>
-                    <Button variant="Contained" onClick={this.onFileUpload}>Upload</Button>
+                    <Button id="uploadButton" variant="Contained" onClick={this.onFileUpload}>Upload</Button>
                 </div>
                 {this.fileData()}
             </div>

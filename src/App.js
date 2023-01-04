@@ -1,12 +1,12 @@
 import './App.css';
 import React from "react";
-import FrontPage from "./components/FrontPage";
+import FileUploadPage from "./components/FileUploadPage";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FrontPage />
+        <FileUploadPage />
       </header>
     </div>
   );
